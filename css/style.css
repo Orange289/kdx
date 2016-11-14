@@ -444,7 +444,7 @@ template {
     width: 1140px;
     height: 561px;
     position: relative;
-    background: url("../../img/bg-brand-burton.jpg") no-repeat; }
+    background: url("../img/bg-brand-burton.jpg") no-repeat; }
   .brand__toggle {
     position: absolute;
     top: 254px;
@@ -721,9 +721,9 @@ template {
   outline: none;
   cursor: pointer; }
   .page-header__btn--open {
-    background: url("../../img/icon-menu-open.svg") no-repeat; }
+    background: url("../img/icon-menu-open.svg") no-repeat; }
   .page-header__btn--close {
-    background: url("../../img/icon-menu-close.svg") no-repeat; }
+    background: url("../img/icon-menu-close.svg") no-repeat; }
 
 @media (min-width: 768px) {
   .page-header {
