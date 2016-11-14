@@ -1,0 +1,147 @@
+.brand {
+	font-family: 'Arial', sans-serif;
+	padding-left: 20px;
+	padding-top: 6px;
+	padding-bottom: 29px;
+	background-color: #ffffff;
+
+	label {
+		@include font-param(15px, 50px, 400, #000000);
+		display: block;
+		padding: 0;
+	}
+
+	select {
+		@include font-param(12px, 40px, 700, #000000);
+		text-transform: uppercase;
+		padding-left: 7px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		border: 1px solid #e7e7e7;
+		width: 210px;
+	}
+
+}
+
+.brand__content {
+	display: none;
+}
+
+
+@media ($wide-widths) {
+
+	.brand {
+		padding-left: 0;
+		padding-top: 17px;
+	}
+
+	.brand__choice {
+		padding-left: 11%;
+	}
+
+	.brand__content {
+		font-family: 'Arial', sans-serif;
+		display: block;
+		margin: 0 auto;
+		margin-top: 51px;
+		@include size(1140px, 561px);
+		position: relative;
+		background: url('../../img/bg-brand-burton.jpg') no-repeat;
+	}
+
+	.brand__toggle {
+		position: absolute;
+		top: 254px;
+		@include size(31px);
+		border-right: 1px solid #ffffff;
+		border-bottom: 1px solid #ffffff;
+
+		&--prev {
+			transform: rotate(135deg);
+			left: 45px;
+		}
+
+		&--next {
+			transform: rotate(-45deg);
+			right: 45px;
+		}
+
+	}
+
+	.brand__title {
+		@include font-param(41.63px, 31px, 400, #ffffff);
+		text-transform: uppercase;
+		position: absolute;
+		top: 491px;
+		right: 46px;
+	}
+
+	.brand__item {
+		display: none;
+		@include font-param(20px, 30px, 400, #ffffff);
+		position: absolute;
+
+		span {
+			display: block;
+		}
+
+		&--jacket {
+			top: 115px;
+			left: 650px;
+		}
+
+		&--snowboard {
+			top: 330px;
+			left: 474px;
+		}
+
+	}
+
+	.brand-show {
+		display: block;
+	}
+
+	.brand__catalog {
+		@include font-param(15px, 30px, 400, #00aeef);
+	}
+
+	.brand__add {
+		position: absolute;
+		@include size(43px);
+		background-color: #ffffff;
+		border-radius: 50%;
+
+		span {
+			position: absolute;
+			background-color: #00aeef;
+		}
+
+		span:first-child {
+			@include size(22px, 2px);
+			top: 20px;
+			left: 10px;
+		}
+
+		span:last-child {
+			@include size(2px, 22px);
+			top: 10px;
+			left: 20px;
+		}
+
+		&--jacket {
+			top: 108px;
+			left: 593px;
+		}
+
+		&--snowboard {
+			top: 325px;
+			left: 410px;
+		}
+
+	}
+
+	.brand__add:hover span{
+		background-color: #e3343d;
+	}
+
+}

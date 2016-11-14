@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang='ru'>
+	<head>
+		<meta charset='utf-8'>
+		<link rel='stylesheet' href='css/style.css'>
+		<link rel='stylesheet' href='css/jquery.formstyler.css'>
+		<link type='text/css' rel='stylesheet' href='css/jquery.jscrollpane.css'/>
+		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+		<script src='js/jquery.formstyler.min.js'></script>
+		<script type='text/javascript' src='js/jquery.mousewheel.js'></script>
+		<script type='text/javascript' src='js/jquery.jscrollpane.js'></script>
+		<title>Kodix - Тест</title>
+		<meta name='viewport' content='width=device-width,initial-scale=1'>
+	</head>
+	<body class='page-body'>
+		<header class='page-header'>
+			<div class='page-header__logo'>
+				<picture>
+					<source media='(min-width: 768px)' srcset='img/img-logo-desktop.png'>
+					<img src='img/img-logo.png' alt='CAPTAIN QUACK'>
+				</picture>
+			</div>
+			<nav class='main-nav'>
+				<button class='page-header__btn page-header__btn--open' type='button' title='открыть'></button>
+				<ul class='main-nav__list'>
+					<li class='main-nav__item'><a class='main-nav__link main-nav__link--vehicle' href='#'>Автомобили</a><span class='main-nav__btn main-nav__btn--vehicle'></span>
+						<ul class='main-nav__sublist main-nav__sublist--vehicle'>
+							<li class='main-nav__subitem'><a href='#'>Подбор авто</a></li>
+							<li class='main-nav__subitem'><a href='#'>Автомобили с пробегом</a></li>
+							<li class='main-nav__subitem'><a href='#'>Карта цен</a></li>
+						</ul>
+					</li>
+					<li class='main-nav__item'><a class='main-nav__link main-nav__link--action' href='#'>Акции</a><span class='main-nav__btn main-nav__btn--action'></span>
+						<ul class='main-nav__sublist main-nav__sublist--action'>
+							<li class='main-nav__subitem'><a href='#'>Акция раз</a></li>
+							<li class='main-nav__subitem'><a href='#'>Еще раз</a></li>
+							<li class='main-nav__subitem'><a href='#'>Еще много-много раз</a></li>
+						</ul>
+					</li>
+					<li class='main-nav__item'><a class='main-nav__link main-nav__link--service' href='#'>Услуги</a><span class='main-nav__btn main-nav__btn--service'></span>
+						<ul class='main-nav__sublist main-nav__sublist--service'>
+							<li class='main-nav__subitem'><a href='#'>Услуга раз</a></li>
+							<li class='main-nav__subitem'><a href='#'>Услуга два</a></li>
+							<li class='main-nav__subitem'><a href='#'>Услуга три</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main class='page-main'>
+			<section class='brand'>
+				<form class='brand__choice' action='#' method='post'>
+					<label for='id-brand'>Выберите бренд</label>
+					<select name='select_brand' id='id-brand'>
+						<option value='apo'>apo</option>
+						<option value='arbor'>arbor</option>
+						<option selected value='burton'>burton</option>
+						<option value='hoegaarden'>hoegaarden</option>
+						<option value='capita'>capita</option>
+						<option value='dc'>dc</option>
+						<option value='forum'>forum</option>
+						<option value='gnu'>gnu</option>
+						<option value='joint'>joint</option>
+						<option value='jones'>jones</option>
+						<option value='lib'>lib</option>
+						<option value='lobster'>lobster</option>
+						<option value='never summer'>never summer</option>
+						<option value='slash'>slash</option>
+						<option value='yes'>yes</option>
+						<option value='syrokdruzhba'>syrokdruzhba</option>
+						<option value='adidas'>adidas</option>
+						<option value='reebok'>reebok</option>
+					</select>
+				</form>
+				<div class='brand__content'>
+					<a class='brand__toggle brand__toggle--prev' href='#'></a>
+					<a class='brand__toggle brand__toggle--next' href='#'></a>
+					<a class='brand__add brand__add--jacket' href='#'>
+						<span></span>
+						<span></span>
+					</a>
+					<a class='brand__add brand__add--snowboard' href='#'>
+						<span></span>
+						<span></span>
+					</a>
+					<div class='brand__item brand__item--jacket brand-show'>
+						<span>Куртка</span>
+						<span>Burton Poacher Jacket</span>
+						<span>6 430 руб</span>
+						<a class='brand__catalog' href='https://www.burton.com/us/en/mens-street-jackets-outerwear'>Посмотреть в каталоге</a>
+					</div>
+					<div class='brand__item brand__item--snowboard'>
+						<span>Сноуборд</span>
+						<span>Burton Mystery 55</span>
+						<span>74 639 руб</span>
+						<a class='brand__catalog' href='https://www.burton.com/us/en/mens-snowboarding'>Посмотреть в каталоге</a>
+					</div>
+					<b class='brand__title'>burton зима 2014</b>
+				</div>
+			</section>
+			<section class='vehicle'>
+				<b>Автомобили в наличии</b>
+				<div class='vehicle__content'>
+					<ul class='vehicle__header'>
+						<li class='vehicle__title vehicle__title--name'>Название</li>
+						<li class='vehicle__title vehicle__title--year'>Год</li>
+						<li class='vehicle__title vehicle__title--color'>Цвет</li>
+						<li class='vehicle__title vehicle__title--status'>Статус</li>
+						<li class='vehicle__title vehicle__title--price'>Цена</li>
+					</ul>
+					<div class='vehicle__item vehicle__item--one'>
+						<div class='vehicle__name'>
+							<span>1.6 MT Ambiente</span>
+							<span>85 л.с. МКПП</span>
+						</div>
+						<span class='vehicle__color vehicle__color--black'></span>
+						<span class='vehicle__price'>1 689 000 руб.</span>
+						<p>+ доп. опция «Радио-навигационная система Amundasen 2DIN, CD, MP3»</p>
+						<span class='vehicle__year'>2012</span>
+						<span class='vehicle__status'>Ожидается</span>
+						<a class='vehicle__request' href='#'>Запрос</a>
+					</div>
+					<div class='vehicle__item vehicle__item--two'>
+						<div class='vehicle__name'>
+							<span>1.6 MT Ambiente</span>
+							<span>105 л.с. МКПП</span>
+						</div>
+						<span class='vehicle__color vehicle__color--white'></span>
+						<span class='vehicle__price'>1 189 000 руб.</span>
+						<span class='vehicle__year'>2012</span>
+						<span class='vehicle__status'>Ожидается</span>
+						<a class='vehicle__request' href='#'>Запрос</a>
+					</div>
+					<div class='vehicle__item vehicle__item--three'>
+						<div class='vehicle__name'>
+							<span>1.6 MT Trend 105 л.с.</span>
+							<span>МКПП</span>
+						</div>
+						<span class='vehicle__color vehicle__color--black'></span>
+						<span class='vehicle__price'>1 459 000 руб.</span>
+						<span class='vehicle__year'>2012</span>
+						<span class='vehicle__status'>В наличии</span>
+						<a class='vehicle__request' href='#'>Запрос</a>
+					</div>
+					<div class='vehicle__item vehicle__item--four'>
+						<div class='vehicle__name'>
+							<span>1.6 PowerShift Trend</span>
+							<span>Sport 105 л.с. АКПП</span>
+						</div>
+						<span class='vehicle__color vehicle__color--gray'></span>
+						<span class='vehicle__price'>1 459 000 руб.</span>
+						<span class='vehicle__year'>2012</span>
+						<span class='vehicle__status'>Ожидается</span>
+						<a class='vehicle__request' href='#'>Запрос</a>
+					</div>
+					<div class='vehicle__item vehicle__item--five'>
+						<div class='vehicle__name'>
+							<span>2.0 MT Trend Sport</span>
+							<span>150 л.с. МКПП</span>
+						</div>
+						<span class='vehicle__color vehicle__color--pink'></span>
+						<span class='vehicle__price'>786 000 руб.</span>
+						<span class='vehicle__year'>2012</span>
+						<span class='vehicle__status'>Ожидается</span>
+						<a class='vehicle__request' href='#'>Запрос</a>
+					</div>
+					<div class='vehicle__item vehicle__item--six'>
+						<div class='vehicle__name'>
+							<span>2.0 PowerShift Trend</span>
+							<span>Sport 150 л.с. АКПП</span>
+						</div>
+						<span class='vehicle__color vehicle__color--green'></span>
+						<span class='vehicle__price'>821 000 руб.</span>
+						<p>+ доп. опция «Радио-навигационная система Amundasen 2DIN, CD, MP3»</p>
+						<span class='vehicle__year'>2013</span>
+						<span class='vehicle__status'>Нет в наличии</span>
+						<a class='vehicle__request' href='#'>Запрос</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class='page-footer'>
+			<div class='page-footer__copyright'>
+				<span>© 2015 CAPTAIN QUACK</span>
+				<span>Десница тысячелетия и моллюск!</span>
+			</div>
+		</footer>
+		<script src='js/script.js'></script>
+	</body>
+</html>

@@ -1,0 +1,12 @@
+.page-footer {
+	@include font-param(11px, 14px, 300, #ffffff);
+	background-color: #282d30;
+	text-align: center;
+	padding-top: 43px;
+	padding-bottom: 38px;
+
+	span {
+		display: block;
+	}
+
+}
